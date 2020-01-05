@@ -8,14 +8,13 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import java.util.ArrayList;
 import java.util.List;
-
+//blabl
 public class Activity2 extends AppCompatActivity {
 
     SearchView mySearchView;
     ListView myList;
     ArrayList<String> list;
     ArrayAdapter<String> adapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
