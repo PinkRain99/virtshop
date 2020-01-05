@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        //this is a comment
         button = findViewById(R.id.Button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
