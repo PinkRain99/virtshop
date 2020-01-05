@@ -1,4 +1,4 @@
-package com.example.widget;
+package com.example.virtshop;
 
 import androidx.appcompat.app.AppCompatActivity;
 
