@@ -32,6 +32,7 @@ public class Activity2 extends AppCompatActivity {
         list.add("Hartie si servetele");
         list.add("Alimente");
 
+
         adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,list );
         myList.setAdapter(adapter);
 
