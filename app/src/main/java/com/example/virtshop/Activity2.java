@@ -7,8 +7,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 import java.util.ArrayList;
-import java.util.List;
-//blablfhtrdvdsrbwe
 public class Activity2 extends AppCompatActivity {
 
     SearchView mySearchView;
