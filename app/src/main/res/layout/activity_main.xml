@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar"/>
+
 
     <com.hitomi.cmlibrary.CircleMenu
         android:id="@+id/circle_menu"
@@ -19,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="59dp"
+        android:layout_marginTop="33dp"
         app:srcCompat="@android:drawable/ic_search_category_default" />
 
 

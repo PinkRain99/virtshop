@@ -9,10 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".tv"
+          android:parentActivityName=".MainActivity"  />
+        <activity android:name=".vege"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".food"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".pet"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".sapun"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".Activity2"
-            android:label="@string/title_activity_2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:label="@string/title_activity_2" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

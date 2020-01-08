@@ -32,8 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
 
         button = findViewById(R.id.image_button);
         CircleMenu circleMenu = findViewById(R.id.circle_menu);
@@ -47,16 +46,40 @@ public class MainActivity extends AppCompatActivity {
         });
 
         circleMenu.setMainMenu(Color.parseColor("#CDCDCD"), R.drawable.ic_app, R.drawable.ic_cancel)
-                .addSubMenu(Color.parseColor("#258CFF"), R.drawable.food)
-                .addSubMenu(Color.parseColor("#30A400"), R.drawable.pet)
-                .addSubMenu(Color.parseColor("#FF4B32"), R.drawable.sapun)
-                .addSubMenu(Color.parseColor("#8A39FF"), R.drawable.tv)
-                .addSubMenu(Color.parseColor("#FF6A00"), R.drawable.vege)
+                .addSubMenu(Color.parseColor("#258CFF"), R.drawable.sapun)
+                .addSubMenu(Color.parseColor("#30A400"), R.drawable.food)
+                .addSubMenu(Color.parseColor("#FF4B32"), R.drawable.pet)
+                .addSubMenu(Color.parseColor("#8A39FF"), R.drawable.vege)
+                .addSubMenu(Color.parseColor("#FF6A00"), R.drawable.tv)
+
+
+
                 .setOnMenuSelectedListener(new OnMenuSelectedListener() {
                     @Override
                     public void onMenuSelected(int index) {
                         Toast.makeText(MainActivity.this, "You selected " + arrayName[index], Toast.LENGTH_SHORT).show();
-                    }
+
+                        if (index==0){
+                            Intent intent = new Intent(MainActivity.this,sapun.class);
+                            startActivity(intent);
+                        }
+                        if (index==1){
+                            Intent intent = new Intent(MainActivity.this,food.class);
+                            startActivity(intent);
+                        }
+                        if (index==2){
+                            Intent intent = new Intent(MainActivity.this,pet.class);
+                            startActivity(intent);
+                        }
+                        if (index==3){
+                            Intent intent = new Intent(MainActivity.this,vege.class);
+                            startActivity(intent);
+                        }
+                        if (index==4){
+                            Intent intent = new Intent(MainActivity.this,tv.class);
+                            startActivity(intent);
+                        }
+                        }
                 });
     }
 
